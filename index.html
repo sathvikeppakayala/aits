@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telangana AI Grand Challenge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        body {
+            background-color: #FFFFFF;
+            color: #4B5563;
+        }
+        header {
+            background-color: #a7c3ff;
+            border-bottom: 1px solid #E5E7EB;
+        }
+        h1, h2, h3 {
+            color: #003087;
+        }
+        .btn-primary {
+            background-color: #0055A4;
+            color: #FFFFFF;
+            padding: 0.5rem 1.5rem;
+            border-radius: 0.375rem;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #003087;
+        }
+        .partner-grid {
+            background-color: #F9FAFB;
+            padding: 2rem;
+            border-radius: 0.5rem;
+        }
+        footer {
+            background-color: #003087;
+            color: #FFFFFF;
+        }
+        #public-projects {
+            scroll-margin-top: 80px;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Header with buttons -->
+    <header class="py-6 fixed w-full top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div>
+                <h1 class="text-4xl font-bold">Telangana AI Grand Challenge</h1>
+                <p class="mt-2 text-lg">Innovate with AI for a Smarter Telangana</p>
+            </div>
+            <div class="space-x-4">
+                <button onclick="window.location.href='#public-projects'" class="btn-primary">Public Projects</button>
+                <button onclick="window.location.href='private.html'" class="btn-primary">Private Projects</button>
+                <button onclick="window.location.href='login.html'" class="btn-primary">Login</button>
+                <button onclick="window.location.href='login.html'" class="btn-primary">Signup</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto pt-24 pb-10 px-4">
+        <!-- Introduction -->
+        <section class="mb-12 animate__animated animate__fadeIn">
+            <br>
+            <br>
+            <br>
+            <h2 class="text-3xl font-semibold mb-4">Welcome to the AI Grand Challenge</h2>
+            <p class="text-lg">
+                Organized by the Telangana Police Department and NASSCOM, the Telangana AI Grand Challenge invites innovators to develop AI solutions for public sector challenges. With a prize pool of ₹1,00,00,000 and additional rewards, this challenge aims to foster impactful AI innovations.
+            </p>
+        </section>
+
+        <!-- Partners -->
+        <section class="mb-12 animate__animated animate__fadeIn animate__delay-1s partner-grid">
+            <h2 class="text-3xl font-semibold mb-4 text-center">Our Partners</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <img src="https://www.abhibus.com/blog/wp-content/uploads/2023/05/tsrtc-logo-300x150.png" alt="TSRTC" class="h-12 mx-auto mb-2">
+                    <p class="font-medium">TSRTC</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <img src="https://th.bing.com/th/id/OIP.ckDIqQoLAH4X3H_JpHCwugHaBE?rs=1&pid=ImgDetMain" alt="NASSCOM" class="h-12 mx-auto mb-2">
+                    <p class="font-medium">NASSCOM</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <img src="https://th.bing.com/th/id/OIP.Pnfd6i-RWCcKyvzm3fI_LQHaBi?rs=1&pid=ImgDetMain" alt="GUVI" class="h-12 mx-auto mb-2">
+                    <p class="font-medium">GUVI</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <img src="https://th.bing.com/th/id/OIP.jO618mn4PXWqu4B-aM1imAHaEb?rs=1&pid=ImgDetMain" alt="AWS" class="h-12 mx-auto mb-2">
+                    <p class="font-medium">AWS</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="h-12 mx-auto mb-2">
+                    <p class="font-medium">Microsoft</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Organizers -->
+        <section class="mb-12 animate__animated animate__fadeIn animate__delay-2s">
+            <h2 class="text-3xl font-semibold mb-4 text-center">Organizers</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <p class="font-medium">Telangana Police Department</p>
+                    <p class="text-gray-600">Leading AI adoption for public safety and governance.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <p class="font-medium">NASSCOM</p>
+                    <p class="text-gray-600">Driving India's IT and AI ecosystem forward.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prize Money -->
+        <section class="mb-12 animate__animated animate__fadeIn animate__delay-3s">
+            <h2 class="text-3xl font-semibold mb-4 text-center">Prize Money</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <p class="text-lg font-medium">Grand Prize: ₹1,00,00,000</p>
+                <p class="text-gray-600">For the most impactful AI solution addressing a public sector challenge.</p>
+                <p class="text-lg font-medium mt-4">Runner-Up Prize: ₹50,00,000</p>
+                <p class="text-gray-600">For the second-best solution with significant potential.</p>
+                <p class="text-lg font-medium mt-4">Innovation Awards: ₹10,00,000 each</p>
+                <p class="text-gray-600">For five unique solutions showcasing creativity and feasibility.</p>
+            </div>
+        </section>
+
+        <!-- Public AI Projects -->
+        <section id="public-projects" class="mb-12 animate__animated animate__fadeIn animate__delay-4s">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-3xl font-semibold">Public AI Projects</h2>
+                <button onclick="window.location.href='login.html'" class="btn-primary">Register</button>
+            </div>
+            <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Projects populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-6">
+        <div class="container mx-auto text-center">
+            <p>© 2025 Telangana AI Grand Challenge. All rights reserved.</p>
+            <p>Contact: +91-9876543210 | Email: ai.grandchallenge@telangana.gov.in</p>
+            <p>Address: IT Hub, Hyderabad, Telangana, India</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const projects = [
+            {
+                title: "Smart Bus Allocation System (TGSRTC)",
+                description: "An AI-driven system to optimize bus allocations for TGSRTC, maximizing revenue and seat occupancy while integrating the Mahalaxmi free travel scheme for women.",
+                features: [
+                    "Deliverable: AI model for dynamic bus scheduling based on demand forecasting.",
+                    "Expected Completion: March 31, 2026",
+                    "Evaluation Criteria: Accuracy of demand forecasting (30%), revenue optimization (30%), integration with Mahalaxmi scheme (20%), scalability (20%)"
+                ]
+            },
+            {
+                title: "Pothole Detection System (GHMC)",
+                description: "AI solution to detect and classify potholes in Hyderabad using video feeds, improving road safety and maintenance efficiency.",
+                features: [
+                    "Deliverable: Real-time pothole detection and classification software.",
+                    "Expected Completion: June 30, 2026",
+                    "Evaluation Criteria: Detection accuracy (40%), processing speed (30%), classification reliability (20%), integration with GHMC systems (10%)"
+                ]
+            },
+            {
+                title: "Wildlife Monitoring System (Forest Department)",
+                description: "AI-powered solution to automate wildlife movement analysis using camera trap images, aiding conservation efforts.",
+                features: [
+                    "Deliverable: Automated wildlife tracking and behavior analysis tool.",
+                    "Expected Completion: September 30, 2026",
+                    "Evaluation Criteria: Accuracy of movement prediction (35%), automation efficiency (30%), usability for forest officials (20%), scalability (15%)"
+                ]
+            },
+            {
+                title: "Drug Consumption Assessment Tool (TSNAB)",
+                description: "AI-enabled WhatsApp bot for assessing drug consumption patterns, supporting the Telangana Anti-Narcotics Bureau.",
+                features: [
+                    "Deliverable: WhatsApp-integrated AI bot for real-time assessments.",
+                    "Expected Completion: December 31, 2025",
+                    "Evaluation Criteria: User engagement rate (30%), assessment accuracy (30%), privacy compliance (20%), deployment speed (20%)"
+                ]
+            },
+            {
+                title: "Predictive Crime Analytics (Telangana Police)",
+                description: "AI model to predict crime hotspots and optimize police resource allocation for enhanced public safety.",
+                features: [
+                    "Deliverable: Crime prediction dashboard with resource allocation recommendations.",
+                    "Expected Completion: April 30, 2026",
+                    "Evaluation Criteria: Prediction accuracy (40%), resource optimization impact (30%), user interface quality (20%), data security (10%)"
+                ]
+            }
+        ];
+
+        const projectsContainer = document.getElementById('projects-container');
+        projects.forEach((project, index) => {
+            const projectCard = document.createElement('div');
+            projectCard.className = 'bg-white p-6 rounded-lg shadow-md animate__animated animate__fadeInUp';
+            projectCard.style.animationDelay = `${index * 0.2}s`;
+            projectCard.innerHTML = `
+                <h3 class="text-xl font-semibold text-blue-900 mb-2">${project.title}</h3>
+                <p class="text-gray-600 mb-4">${project.description}</p>
+                <ul class="list-disc list-inside text-gray-600">
+                    ${project.features.map(feature => `<li>${feature}</li>`).join('')}
+                </ul>
+            `;
+            projectsContainer.appendChild(projectCard);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Telangana AI Grand Challenge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-blue-900 text-white py-6">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div>
+                <h1 class="text-3xl font-bold">Telangana AI Grand Challenge</h1>
+                <p class="mt-1 text-lg">Innovate with AI for a Smarter Telangana</p>
+            </div>
+            <div class="space-x-4">
+                <button onclick="window.location.href='index.html'" class="bg-white text-blue-900 px-4 py-2 rounded-lg font-medium hover:bg-gray-200">Home</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-10 px-4">
+        <section class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold text-blue-900 mb-6 text-center">Sign In</h2>
+            <form onsubmit="event.preventDefault(); alert('Signed in! (Demo)'); window.location.href='projects.html';">
+                <div class="mb-4">
+                    <label for="username" class="block text-gray-700 font-medium mb-2">Username</label>
+                    <input type="text" id="username" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Enter username" required>
+                </div>
+                <div class="mb-6">
+                    <label for="password" class="block text-gray-700 font-medium mb-2">Password</label>
+                    <input type="password" id="password" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Enter password" required>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Sign In</button>
+            </form>
+            <div class="space-y-4 mt-6">
+                <button onclick="alert('Sign in with Google (Demo)'); window.location.href='projects.html'" class="social-btn w-full bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700">
+                    <span>Sign in with Google</span>
+                </button>
+                <button onclick="alert('Sign in with Facebook (Demo)'); window.location.href='projects.html'" class="social-btn w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+                    <span>Sign in with Facebook</span>
+                </button>
+                <button onclick="alert('Sign in with X (Demo)'); window.location.href='projects.html'" class="social-btn w-full bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800">
+                    <span>Sign in with X</span>
+                </button>
+                <button onclick="alert('Sign in with GitHub (Demo)'); window.location.href='projects.html'" class="social-btn w-full bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-700">
+                    <span>Sign in with GitHub</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>© 2025 Telangana AI Grand Challenge. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

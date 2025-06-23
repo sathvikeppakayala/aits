@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Projects - Telangana AI Grand Challenge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        body {
+            background-color: #FFFFFF;
+            color: #4B5563;
+        }
+        header {
+            background-color: #d7c6ff;
+            border-bottom: 1px solid #E5E7EB;
+        }
+        h1, h2, h3 {
+            color: #003087;
+        }
+        .btn-primary {
+            background-color: #0055A4;
+            color: #FFFFFF;
+            padding: 0.5rem 1.5rem;
+            border-radius: 0.375rem;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #003087;
+        }
+        .cart-count {
+            background-color: #EF4444;
+            color: #FFFFFF;
+            border-radius: 9999px;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <header class="py-6 fixed w-full top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div>
+                <h1 class="text-4xl font-bold">Telangana AI Grand Challenge</h1>
+                <p class="mt-2 text-lg">Innovate with AI for a Smarter Telangana</p>
+            </div>
+            <div class="space-x-4">
+                <button onclick="window.location.href='cart.html'" class="btn-primary relative">
+                    Cart <span id="cart-count" class="cart-count hidden">0</span>
+                </button>
+                <button onclick="window.location.href='index.html'" class="btn-primary">Sign Out</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto pt-24 pb-10 px-4">
+        <br>
+        <br>
+        <br>
+        <h2 class="text-3xl font-semibold mb-4 animate__animated animate__fadeIn">Private AI Projects</h2>
+        <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Projects populated by JavaScript -->
+        </div>
+    </main>
+
+    <footer class="py-6">
+        <div class="container mx-auto text-center">
+            <p>© 2025 Telangana AI Grand Challenge. All rights reserved.</p>
+            <p>Contact: +91-9876543210 | Email: ai.grandchallenge@telangana.gov.in</p>
+            <p>Address: IT Hub, Hyderabad, Telangana, India</p>
+        </div>
+    </footer>
+
+    <script>
+        const privateProjects = [
+            {
+                id: 1,
+                title: "AI-Powered Traffic Optimization",
+                description: "A system to reduce traffic congestion using real-time AI analysis.",
+                price: 500000,
+                details: [
+                    "Deliverable: AI model for traffic flow prediction.",
+                    "Expected Completion: May 31, 2026",
+                    "Evaluation Criteria: Congestion reduction (40%), accuracy (30%), scalability (20%), integration (10%)"
+                ]
+            },
+            {
+                id: 2,
+                title: "Healthcare Predictive Analytics",
+                description: "AI solution for predicting disease outbreaks in Telangana.",
+                price: 750000,
+                details: [
+                    "Deliverable: Predictive analytics dashboard.",
+                    "Expected Completion: July 31, 2026",
+                    "Evaluation Criteria: Prediction accuracy (50%), usability (30%), data privacy (20%)"
+                ]
+            },
+            {
+                id: 3,
+                title: "Smart Waste Management",
+                description: "AI-driven waste collection optimization for urban areas.",
+                price: 600000,
+                details: [
+                    "Deliverable: AI scheduling and monitoring tool.",
+                    "Expected Completion: June 30, 2026",
+                    "Evaluation Criteria: Efficiency improvement (40%), cost reduction (30%), scalability (20%), usability (10%)"
+                ]
+            }
+        ];
+
+        const projectsContainer = document.getElementById('projects-container');
+        const cartCount = document.getElementById('cart-count');
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function updateCartCount() {
+            cartCount.textContent = cart.length;
+            cartCount.classList.toggle('hidden', cart.length === 0);
+        }
+
+        privateProjects.forEach((project, index) => {
+            const projectCard = document.createElement('div');
+            projectCard.className = 'bg-white p-6 rounded-lg shadow-md animate__animated animate__fadeInUp';
+            projectCard.style.animationDelay = `${index * 0.2}s`;
+            projectCard.innerHTML = `
+                <h3 class="text-xl font-semibold text-blue-900 mb-2 cursor-pointer" onclick="toggleDetails(${project.id})">${project.title}</h3>
+                <p class="text-gray-600 mb-4">${project.description}</p>
+                <p class="text-lg font-medium mb-4">Price: ₹${project.price.toLocaleString()}</p>
+                <div id="details-${project.id}" class="hidden mb-4">
+                    <ul class="list-disc list-inside text-gray-600">
+                        ${project.details.map(detail => `<li>${detail}</li>`).join('')}
+                    </ul>
+                </div>
+                <button onclick="addToCart(${project.id})" class="btn-primary">Add to Cart</button>
+            `;
+            projectsContainer.appendChild(projectCard);
+        });
+
+        function toggleDetails(id) {
+            const details = document.getElementById(`details-${id}`);
+            details.classList.toggle('hidden');
+        }
+
+        function addToCart(id) {
+            const project = privateProjects.find(p => p.id === id);
+            cart.push(project);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartCount();
+            alert(`${project.title} added to cart!`);
+        }
+
+        updateCartCount();
+    </script>
+</body>
+</html>
