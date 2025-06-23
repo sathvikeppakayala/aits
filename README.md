@@ -90,7 +90,6 @@
         <img src="https://th.bing.com/th/id/OIP.ckDIqQoLAH4X3H_JpHCwugHaBE?rs=1&pid=ImgDetMain" alt="NASSCOM Logo" class="h-16 w-auto">
         <img src="https://th.bing.com/th/id/OIP.jO618mn4PXWqu4B-aM1imAHaEb?rs=1&pid=ImgDetMain" alt="AWS Logo" class="h-16 w-auto">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/1200px-Microsoft_logo_%282012%29.svg.png" alt="Microsoft Logo" class="h-16 w-auto">
-        <img src="https://www.abhibus.com/blog/wp-content/uploads/2023/05/tsrtc-logo-300x150.png" alt="TSRTC Logo" class="h-16 w-auto">
         <img src="https://th.bing.com/th/id/OIP.Pnfd6i-RWCcKyvzm3fI_LQHaBi?rs=1&pid=ImgDetMain" alt="GUVI Logo" class="h-16 w-auto">
     </div>
 </section>
