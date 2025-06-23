@@ -87,11 +87,11 @@
 <section class="container mx-auto px-4 py-16 animate__animated animate__fadeIn">
     <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Our Esteemed Partners</h2>
     <div class="flex flex-wrap justify-center items-center gap-8">
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/NASSCOM_logo.svg/1200px-NASSCOM_logo.svg.png" alt="NASSCOM Logo" class="h-16 w-auto">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png" alt="AWS Logo" class="h-16 w-auto">
+        <img src="https://th.bing.com/th/id/OIP.ckDIqQoLAH4X3H_JpHCwugHaBE?rs=1&pid=ImgDetMain" alt="NASSCOM Logo" class="h-16 w-auto">
+        <img src="https://th.bing.com/th/id/OIP.jO618mn4PXWqu4B-aM1imAHaEb?rs=1&pid=ImgDetMain" alt="AWS Logo" class="h-16 w-auto">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/1200px-Microsoft_logo_%282012%29.svg.png" alt="Microsoft Logo" class="h-16 w-auto">
-        <img src="https://www.tsrtc.telangana.gov.in/img/tsrtclogo.png" alt="TSRTC Logo" class="h-16 w-auto">
-        <img src="https://www.guvi.in/Guvi_Logo_Final.png" alt="GUVI Logo" class="h-16 w-auto">
+        <img src="[https://www.tsrtc.telangana.gov.in/img/tsrtclogo.png](https://www.abhibus.com/blog/wp-content/uploads/2023/05/tsrtc-logo-300x150.png)" alt="TSRTC Logo" class="h-16 w-auto">
+        <img src="https://th.bing.com/th/id/OIP.Pnfd6i-RWCcKyvzm3fI_LQHaBi?rs=1&pid=ImgDetMain" alt="GUVI Logo" class="h-16 w-auto">
     </div>
 </section>
 
