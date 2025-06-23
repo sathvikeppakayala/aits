@@ -18,7 +18,7 @@
         The Telangana AI Grand Challenge promotes AI-driven solutions for public sector challenges.
         Join us to build a smarter future for Telangana.
     </p>
-    <img src="https://via.placeholder.com/800x400?text=Telangana+AI+Grand+Challenge+Banner" alt="AI Grand Challenge Banner" class="mx-auto rounded-lg shadow-lg">
+    <img src="https://www.ai4tg.in/img/timelines.png" alt="AI Grand Challenge Banner" class="mx-auto rounded-lg shadow-lg">
 </section>
 
 <!-- Public AI Projects Section -->
